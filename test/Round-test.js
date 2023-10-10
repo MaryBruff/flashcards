@@ -4,6 +4,7 @@ const expect = chai.expect;
 const { createCard, evaluateGuess } = require("../src/card");
 const { createDeck } = require("../src/deck");
 const { createRound, takeTurn, calculatePercentCorrect, endRound } = require("../src/round");
+const { startGame } = require("../src/game");
 
 describe("round", function () {
   it("should return a round", function () {
@@ -119,3 +120,16 @@ describe("takeTurn", function () {
     expect(endRoundMessage).to.equal("**Round over!** You answered 66.66666666666666% of the questions correctly!");
     });
 });
+
+describe("startGame", function () {
+  it("should start a new game with a deck of cards and a current round", function () {
+    const game = startGame();
+
+    expect(game).to.be.an("object");
+    expect(game.currentRound).to.be.an("object");
+    expect(game.currentRound.deck).to.be.an("array");
+    expect(game.currentRound.currentCard).to.be.an("object");
+    expect(game.currentRound.turns).to.equal(0);
+  });
+});
+
