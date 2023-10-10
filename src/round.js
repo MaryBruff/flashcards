@@ -22,17 +22,26 @@ const takeTurn = (guess, round) => {
     return result;
 };
 
-function calculatePercentCorrect(round) {
+const calculatePercentCorrect = (round) => {
     const percentCorrect = ((round.turns - round.incorrectGuesses.length) / round.turns) * 100;
     return percentCorrect;
 } 
 
+
 const endRound = (round) => {
-    let percentageCorrect = calculatePercentCorrect(round);
-    console.log(`**Round over!** You answered ${percentageCorrect}% of the questions correctly!`
-    );
-    return `**Round over!** You answered ${percentageCorrect}% of the questions correctly!`;
-    };
+    const percentCorrect = calculatePercentCorrect(round);
+    const endRoundMessage = `**Round over!** You answered ${percentCorrect}% of the questions correctly!`;
+
+    console.log(endRoundMessage);
+
+    if (percentCorrect < 90) {
+        console.log("You did not pass the round. Please go through the entire dataset again.");
+            round.deck = createDeck(round.cards);
+            round.incorrectGuesses = [];
+    } 
+
+    return endRoundMessage;
+}
 
 module.exports = {
 createRound,
