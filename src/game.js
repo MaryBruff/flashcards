@@ -5,16 +5,16 @@ const { createDeck, countCards } = require("./deck");
 const { createRound, endRound } = require("./round");
 const { createCard } = require("./card");
 
-function printMessage(deck) {
+const printMessage = (deck) => {
   console.log(`Welcome to FlashCards! You are playing with ${countCards(deck)} cards.
   -----------------------------------------------------------------------`);
 }
 
-function printQuestion(round) {
+const printQuestion = (round) => {
   util.main(round);
 }
 
-function startGame() {
+const startGame = () => {
   let cards = prototypeQuestions.map((data) => {
     return createCard(data.id, data.question, data.answers, data.correctAnswer);
   });
