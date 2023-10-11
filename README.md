@@ -10,6 +10,9 @@ This application was developed to enable players to assess their JavaScript know
 
 ![Recording 2023-10-10 at 15 18 17](https://github.com/MaryBruff/flashcards/assets/128327004/ddf115ea-4399-4338-b9ed-599fc92e8f48)
 
+![image](https://github.com/MaryBruff/flashcards/assets/128327004/e0d758e2-c19b-4153-8cfd-3b3cbd9528b9)
+
+
 ## Technologies Used
 - JavaScript
 - Chai
