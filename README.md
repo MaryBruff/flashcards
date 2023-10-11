@@ -1,4 +1,6 @@
 # 🃏 FlashCards 
+![Tests](https://badgen.net/badge/tests/passing/green?icon=github)
+![Commits](https://badgen.net/github/last-commit/MaryBruff/flashcards?icon=github)
 
 ## Abstract 
 
@@ -14,10 +16,9 @@ This application was developed to enable players to assess their JavaScript know
 
 
 ## Technologies Used
-- JavaScript
-- Chai
-- Mocha
-- ES6
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
+![VS Code Insiders](https://img.shields.io/badge/VS%20Code%20Insiders-35b393.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
 ## Install/Setup Instructions
